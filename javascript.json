@@ -101,5 +101,15 @@
       "//27"
 		],
 		"description": "Rest parameters allows us to gather the parameters passed to our functions"     
+  },
+  " Default Parameters Es6" : {
+		"prefix": "_defaultparameterses6",
+		"body": [
+      "//defaut parameters:",
+      "function test(x=6){",
+      " //do something here",
+      "}"
+		],
+		"description": "Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed."     
   }
 }
