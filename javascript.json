@@ -58,6 +58,48 @@
       "let test = `\\${job} text here`;"    
 		],
 		"description": "To create a template literal string, we use the backtick ` in place of the quotes.and the browser will replace the ${} expression with the proper value at runtime. "    
+  },
+  "Samples Arrow Function": {
+		"prefix": "_samplesarrowfunction",
+		"body": [
+      "//fat arrow ",
+      "const add = (a, b) => {",
+      " return a + b;",
+      "}",
+      "//add(2, 3); // 5",
+      "",
+      "// function with one paramenter, we can actually leave the () off ",
+      "const add = a => a + 5;",
+      "",
+      "//if there are not parameters to be used in the function,empty parenthesis are used as a placeholder",
+      "const eight = () => 3 + 5;",
+      "// or new parttern emerging where people wull us ' _ ' as a placeholder",
+      "const eight = _ => 3 + 5;"
+		],
+		"description": "The core part of the syntax is the lack of the function keyword when defining a new function. Instead we have the => or fat arrow. You can call the function just as you would any other"    
+  },
+  "Concat Array ES6": {
+		"prefix": "_concatarrayes6",
+		"body": [
+      "//spread operator: ' ... ' ",
+      "const numberArray1 = [3,4,5,7,8] ",
+      "const numberArray2 = [6,9,10]",
+      "const concatArray = [...numberArray1, ...numberArray2 ]",
+      "console.log(concatArray)",
+      "//[3,4,5,7,8,6,9,10]"
+		],
+		"description": "Spread will expand the array in place and pass the elements in as if it were a comma separated list."    
+  },
+  " Rest Parameters" : {
+		"prefix": "_restparameterses6",
+		"body": [
+      "//Rest Parameters: ' ... ' ",
+      "const add = function(...numbers){ ",
+      " return numbers.reduce((a,b) => a + b);",
+      "}",
+      "add(2,3,4,5,6,7)",
+      "//27"
+		],
+		"description": "Rest parameters allows us to gather the parameters passed to our functions"     
   }
-  
 }
