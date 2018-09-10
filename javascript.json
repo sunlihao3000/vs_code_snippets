@@ -6,5 +6,58 @@
       "$1"
 		],
 		"description": "add user strict mode to the begining of a script or a function. declared inside a function, it has local scope, only the inside the function is in strict mode"
-	}
+  },
+  "Console.log": {
+		"prefix": "_consolelog",
+		"body": [
+      " console.log(\"${1:here}\"); ",
+		],
+		"description": "console.log"
+  },
+  "For Loop ES5": {
+		"prefix": "_forloopes5",
+		"body": [
+      "for (var ${1:i} = 0; ${1:i} <${2:array}.length; ${1:i}++) {",
+      " //${2:array}[${1:i}];",
+      " ${3}",
+     "}"      
+		],
+		"description": "for loop ES5"    
+  },
+  "For Loop Let ES6": {
+		"prefix": "_forloopletes6",
+		"body": [
+      "for (let ${1:i} = 0; ${1:i} <${2:array}.length; ${1:i}++) {",
+      " //${2:array}[${1:i}];",
+      " ${3}",
+     "}"      
+		],
+		"description": "for loop using let instead var in ES5"    
+  },
+  "Text Function": {
+		"prefix": "_ft",
+		"body": [
+      "function$1"     
+		],
+		"description": "short typing function"    
+  },
+  "Function ES5 Code": {
+		"prefix": "_functiones5",
+		"body": [
+      "function ${1:functionName}($2) {",
+      " //$2  ",
+      " $3",
+      "}"     
+		],
+		"description": "sample function in ES5"    
+  },
+  "ES6 Backtick": {
+		"prefix": "_backtickES6",
+		"body": [
+      "let job = `Instructor`;",
+      "let test = `\\${job} text here`;"    
+		],
+		"description": "To create a template literal string, we use the backtick ` in place of the quotes.and the browser will replace the ${} expression with the proper value at runtime. "    
+  }
+  
 }
